@@ -31,6 +31,10 @@ body {
   color: #aaa;
 }
 
+.f-white {
+  color: white;
+}
+
 .b-black {
   background-color: black;
 }
@@ -49,6 +53,10 @@ body {
 
 .h-auto {
   height: auto;
+}
+
+.padding-20 {
+  padding: 20px;
 }
 
 .p-right {
@@ -98,6 +106,7 @@ a:-webkit-any-link {
   grid-template-columns: 60% 40%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .bs-bb {
@@ -164,13 +173,13 @@ a:-webkit-any-link {
 
 .articles-1 {
   display: grid;
-  height: 400px;
+  height: 500px;
   grid-template-areas:
     "article-left top-right-article"
-    "article-left bottom-right-article" ;
+    "article-left bottom-right-article";
   grid-template-rows: 50% 50%;
   grid-template-columns: 65% 35%;
-  margin-top: 125px;
+  margin: 125px 10px 20px 10px;
   gap: 5px;
 }
 
@@ -179,45 +188,77 @@ a:-webkit-any-link {
   background-image: url("images/article-left.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 30px;
-  padding-right: 10px;
+  position: relative;
+  z-index: 1;
 }
 
-.left-article p {
-margin-left: 70%;
+.l-gradient {
+  position: absolute;
+  background: rgb(218, 141, 32);
+  background: linear-gradient(
+    173deg,
+    rgba(218, 141, 32, 0.8) 18%,
+    rgba(165, 7, 227, 0.4) 51%,
+    rgba(0, 0, 0, 0.8) 76%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.r-gradient {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .left-article h5 {
-  margin-top: 17%;
+  margin: 10% 0 5px 0;
+  font-family: Avalon, sans-serif;
 }
 
 .left-article h2 {
   font-size: 40px;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
 .left-article img {
   width: 40%;
-  float:left;
-  margin-top: 10px;
-  margin-left: 20px;
+  height: 40%;
 }
 
 .top-right-article {
+  position: relative;
   grid-area: top-right-article;
   background-image: url("images/top-right-article.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.top-right-article h2 {
-  color: white;
-  margin-top: 25%;
-  margin-left: 3%;
+  padding-top: 30%;
+  z-index: 2;
 }
 
 .bottom-right-article {
+  position: relative;
   grid-area: bottom-right-article;
   background-image: url("./images/bottom-right-article.png");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 3;
+}
+
+.bottom-right-article h5 {
+  margin-top: 15%;
 }
