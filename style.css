@@ -100,6 +100,10 @@ a:-webkit-any-link {
   top: 0;
 }
 
+.bs-bb {
+  box-sizing: border-box;
+}
+
 .t-left {
   grid-area: t-left;
 }
@@ -167,28 +171,52 @@ a:-webkit-any-link {
   grid-template-rows: 50% 50%;
   grid-template-columns: 65% 35%;
   margin-top: 125px;
+  gap: 5px;
 }
 
 .left-article {
   grid-area: article-left;
-  box-sizing: border-box;
   background-image: url("images/article-left.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 30px;
+  padding-right: 10px;
+}
 
+.left-article p {
+margin-left: 70%;
+}
+
+.left-article h5 {
+  margin-top: 17%;
+}
+
+.left-article h2 {
+  font-size: 40px;
+}
+
+.left-article img {
+  width: 40%;
+  float:left;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .top-right-article {
   grid-area: top-right-article;
-  box-sizing: border-box;
   background-image: url("images/top-right-article.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.top-right-article h2 {
+  color: white;
+  margin-top: 25%;
+  margin-left: 3%;
+}
+
 .bottom-right-article {
   grid-area: bottom-right-article;
-  box-sizing: border-box;
   background-image: url("./images/bottom-right-article.png");
   background-repeat: no-repeat;
   background-size: cover;
