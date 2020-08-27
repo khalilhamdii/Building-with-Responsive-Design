@@ -31,6 +31,10 @@ body {
   color: #aaa;
 }
 
+.f-black {
+  color: black;
+}
+
 .f-white {
   color: white;
 }
@@ -75,6 +79,10 @@ body {
 
 .space-around {
   justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 ul {
@@ -261,4 +269,26 @@ a:-webkit-any-link {
 
 .bottom-right-article h5 {
   margin-top: 15%;
+}
+
+.news {
+ flex-wrap: wrap;
+ margin: 30px auto;
+ width: 80%;
+ gap: 10px;
+ height: 250px;
+ align-items: flex-start;
+}
+
+.news-article {
+  width: 23%;
+  margin-bottom: 15px;
+}
+
+.news-article img {
+  height: 130px;
+}
+
+.latest-news a {
+  color: red;
 }
