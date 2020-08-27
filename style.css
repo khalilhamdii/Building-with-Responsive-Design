@@ -342,3 +342,15 @@ a:-webkit-any-link {
   top: 10px;
   left: 10px;
 }
+
+.fund-round i {
+  margin-right: 9px;
+}
+
+.fund-links2 {
+  float: right;
+  padding: 0 6px;
+  border-right-style: solid;
+  border-right-color: #ff4422;
+}
+
