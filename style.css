@@ -7,6 +7,11 @@ body {
   font-size: 14px;
 }
 
+main {
+  width: 80%;
+  margin: auto;
+}
+
 .small-text {
   font-size: small;
 }
@@ -45,6 +50,18 @@ body {
 
 .b-grey {
   background-color: #fefefe;
+}
+
+.b-orange {
+  background-color: #ff4422;
+}
+
+.b-light-orange {
+  background-color: #ffebe8;
+}
+
+.b-lighter-orange {
+  background-color: #fffaf8;
 }
 
 .w-100 {
@@ -179,7 +196,7 @@ a:-webkit-any-link {
   transform: scale(1.5);
 }
 
-.articles-1 {
+.header-news {
   display: grid;
   height: 500px;
   grid-template-areas:
@@ -272,12 +289,11 @@ a:-webkit-any-link {
 }
 
 .news {
- flex-wrap: wrap;
- margin: 30px auto;
- width: 80%;
- gap: 10px;
- height: 250px;
- align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  gap: 10px;
+  height: auto;
+  align-items: flex-start;
 }
 
 .news-article {
@@ -289,6 +305,40 @@ a:-webkit-any-link {
   height: 130px;
 }
 
-.latest-news a {
-  color: red;
+.section-name a {
+  color: #ff4422;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.section-name a:hover {
+  color: black;
+}
+
+.funding-rounds {
+  flex-wrap: wrap;
+  margin: 30px auto;
+  gap: 10px;
+  height: auto;
+  align-items: flex-start;
+}
+
+.fund-round {
+  width: 23%;
+  height: 290px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.fund-round h4 {
+  margin: 0;
+  padding: 5% 0 5% 40%;
+  font-size: 24px;
+}
+
+.fund-round img {
+  position: absolute;
+  width: 30%;
+  top: 10px;
+  left: 10px;
 }
