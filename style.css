@@ -6,6 +6,75 @@
     float: right;
 }
 
+.b-black {
+    background-color: black;
+}
+
+.b-grey {
+    background-color: #FDFDFD;
+}
+
+.grey {
+    color: grey;
+}
+
+.white {
+    color: white;
+}
+
 .w-100 {
     width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: grid;
+    height: 120px;
+    grid-template-areas:
+    "t-left t-right"
+    "m-left m-right"
+    "b-row b-row";
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 70% 30%;
+    position: fixed;
+    top: 0;
+}
+
+.t-left {
+    grid-area: t-left;
+}
+
+
+.t-right {
+    grid-area: t-right;
+}
+
+.m-left {
+    grid-area: m-left;
+}
+
+.m-right {
+    grid-area: m-right;
+}
+
+.b-row {
+    grid-area: b-row;
 }
