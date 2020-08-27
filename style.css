@@ -1,80 +1,154 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.small-text {
+  font-size: small;
+}
+
+.medium-text {
+  font-size: medium;
+}
+
+.large-text {
+  font-size: large;
+}
+
 .fl {
-    float: left;
+  float: left;
 }
 
 .fr {
-    float: right;
+  float: right;
+}
+
+.f-grey {
+  color: #aaa;
 }
 
 .b-black {
-    background-color: black;
+  background-color: black;
 }
 
 .b-grey {
-    background-color: #FDFDFD;
-}
-
-.grey {
-    color: grey;
-}
-
-.white {
-    color: white;
+  background-color: #fefefe;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.p-right {
+  padding-right: 20px;
+}
+
+.p-left {
+  padding-left: 20px;
 }
 
 .flex {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
 }
 
 ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-    list-style-type: none;
-    gap: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  list-style-type: none;
+  gap: 20px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: #aaa;
 }
 
 .navbar {
-    display: grid;
-    height: 120px;
-    grid-template-areas:
+  display: grid;
+  height: 120px;
+  grid-template-areas:
     "t-left t-right"
     "m-left m-right"
     "b-row b-row";
-    grid-template-rows: 25% 50% 25%;
-    grid-template-columns: 70% 30%;
-    position: fixed;
-    top: 0;
+  grid-template-rows: 25% 50% 25%;
+  grid-template-columns: 60% 40%;
+  position: fixed;
 }
 
 .t-left {
-    grid-area: t-left;
+  grid-area: t-left;
 }
 
-
 .t-right {
-    grid-area: t-right;
+  grid-area: t-right;
+  position: relative;
 }
 
 .m-left {
-    grid-area: m-left;
+  grid-area: m-left;
 }
 
 .m-right {
-    grid-area: m-right;
+  grid-area: m-right;
+  border-left: 1px solid rgb(218, 218, 218);
+}
+
+.m-right img {
+  height: 100%;
+  width: auto;
+}
+
+.m-right span {
+  color: red;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Ropa Sans";
+}
+
+.m-right button {
+  background-color: #0cc;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font: 14px bolder;
+  height: 60%;
+  width: 100px;
+  font-family: "Maven Pro";
+}
+
+.m-right button:hover {
+  background-color: #9900cc;
 }
 
 .b-row {
-    grid-area: b-row;
+  grid-area: b-row;
+  background-color: #ffdd33;
+}
+
+.b-row a {
+  color: black;
+}
+
+.loop-icon {
+  transform: scale(1.5);
 }
