@@ -1,3 +1,60 @@
+@media only screen and (min-width: 1023px) {
+  .header-news {
+    display: grid;
+    height: 500px;
+    grid-template-areas:
+      "article-left top-right-article"
+      "article-left bottom-right-article";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 65% 35%;
+    margin: 125px 10px 20px 10px;
+    gap: 10px;
+  }
+
+  .left-article img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .left-article h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  .left-article h5 {
+    margin-top: 30px;
+  }
+
+  .top-right-article h2 {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #tnw-logo-inside,
+  #date {
+    display: none;
+  }
+
+  .header-news {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 125px 10px 20px 10px;
+    gap: 5px;
+  }
+
+  .left-article h5 {
+    margin-top: 10%;
+  }
+
+  .top-right-article h2 {
+    margin-top: 15%;
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -211,16 +268,11 @@ a:-webkit-any-link {
   transform: scale(1.5);
 }
 
+/* Header styling starts here */
+
 .header-news {
-  display: grid;
-  height: 500px;
-  grid-template-areas:
-    "article-left top-right-article"
-    "article-left bottom-right-article";
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 65% 35%;
-  margin: 125px 10px 20px 10px;
-  gap: 5px;
+  font-family: Avalon, sans-serif;
+  box-sizing: border-box;
 }
 
 .left-article {
@@ -264,29 +316,12 @@ a:-webkit-any-link {
   z-index: -1;
 }
 
-.left-article h5 {
-  margin: 10% 0 5px 0;
-  font-family: Avalon, sans-serif;
-}
-
-.left-article h2 {
-  font-size: 40px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.left-article img {
-  width: 40%;
-  height: 40%;
-}
-
 .top-right-article {
   position: relative;
   grid-area: top-right-article;
   background-image: url("images/top-right-article.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 30%;
   z-index: 2;
 }
 
@@ -300,8 +335,10 @@ a:-webkit-any-link {
 }
 
 .bottom-right-article h5 {
-  margin-top: 15%;
+  margin-top: 10%;
 }
+
+/* Header styling ends here */
 
 .news {
   flex-wrap: wrap;
