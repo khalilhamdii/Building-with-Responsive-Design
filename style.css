@@ -8,8 +8,7 @@ body {
 }
 
 main {
-  width: 80%;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .small-text {
@@ -42,6 +41,10 @@ main {
 
 .f-white {
   color: white;
+}
+
+.f-orange {
+  color: #ff4422;
 }
 
 .b-black {
@@ -100,6 +103,18 @@ main {
 
 .space-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
 }
 
 ul {
@@ -315,6 +330,21 @@ a:-webkit-any-link {
   color: black;
 }
 
+/* Funding rounds styling stars here */
+
+.section-info li {
+  padding: 5px 0;
+}
+
+.section-info a {
+  font-weight: 100;
+  color: #ff4422;
+}
+
+.section-info a:hover {
+  color: black;
+}
+
 .funding-rounds {
   flex-wrap: wrap;
   margin: 30px auto;
@@ -324,21 +354,15 @@ a:-webkit-any-link {
 }
 
 .fund-round {
-  width: 23%;
-  height: 290px;
+  width: 100%;
+  height: auto;
   margin-bottom: 15px;
   position: relative;
 }
 
-.fund-round h4 {
-  margin: 0;
-  padding: 5% 0 5% 40%;
-  font-size: 24px;
-}
-
 .fund-round img {
   position: absolute;
-  width: 30%;
+  width: 80px;
   top: 10px;
   left: 10px;
 }
@@ -347,19 +371,28 @@ a:-webkit-any-link {
   margin-right: 9px;
 }
 
-.fund-links2 {
-  float: right;
-  padding: 0 6px;
-  border-right-style: solid;
-  border-right-color: #ff4422;
+.fund-info {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.fund-info span {
+  margin: 0 100px;
+}
+
+#fund-serie {
+  font-size: 10px;
+  color: black;
+}
+
+.fund-tags {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ff4422;
 }
 
 /* Categories starts here */
-
-.categories {
-  width: 95%;
-  margin: auto;
-}
 
 .category h2 a {
   text-decoration: none;
@@ -369,39 +402,39 @@ a:-webkit-any-link {
 }
 
 .category1 {
-  background-image: url("images/category1.png") ;
+  background-image: url("images/category1.png");
 }
 
 .category2 {
-  background-image: url("images/category2.png") ;
+  background-image: url("images/category2.png");
 }
 
 .category3 {
-  background-image: url("images/category3.png") ;
+  background-image: url("images/category3.png");
 }
 
 .category4 {
-  background-image: url("images/category4.png") ;
+  background-image: url("images/category4.png");
 }
 
 .category5 {
-  background-image: url("images/category5.png") ;
+  background-image: url("images/category5.png");
 }
 
 .category6 {
-  background-image: url("images/category6.png") ;
+  background-image: url("images/category6.png");
 }
 
 .category7 {
-  background-image: url("images/category7.png") ;
+  background-image: url("images/category7.png");
 }
 
 .category8 {
-  background-image: url("images/category8.png") ;
+  background-image: url("images/category8.png");
 }
 
 .category9 {
-  background-image: url("images/category9.png") ;
+  background-image: url("images/category9.png");
 }
 
 .category-img {
@@ -420,8 +453,8 @@ a:-webkit-any-link {
 }
 
 .category-img a {
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .category-title {
@@ -429,7 +462,6 @@ color: white;
 }
 
 .back-gradient {
-  
   width: 100%;
   height: 100%;
   position: absolute;
@@ -449,43 +481,44 @@ color: white;
 
 .latest {
   display: grid;
-  grid-template-areas: 
-  "latest-title latest-img";
+  grid-template-areas: "latest-title latest-img";
   grid-template-columns: auto 96px;
   grid-template-rows: 96px;
-  
 }
 
 .latest-title {
   grid-area: latest-title;
-  background-color: #FFF4F2;
-  padding-left: 8px;
-  color: #FF4422;
+  background-color: #fff4f2;
+  padding: 15px 10px 5px 8px;
+  color: #ff4422;
 }
 
 .latest-title a {
- text-decoration: none;
- color: #FF4422;
+  text-decoration: none;
+  color: #ff4422;
+  font-weight: bold;
 }
 
-.latest-title h5{
-  margin-bottom: 5px;
+.latest-title h5 {
+  margin: 5px 0;
 }
 
 .latest-img {
   grid-area: latest-img;
 }
 
-.latest-img img{ 
+.latest-img img {
+  padding-top: 2px;
   width: 100%;
-   height: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .latest-article {
-  padding: 10px 0;
+  padding: 10px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #ECECEC;
+  border-bottom-color: #ececec;
 }
 
 .latest-article a {
@@ -530,14 +563,6 @@ color: white;
   font-weight: 200;
 }
 /* Footer styling starts here */
-
-.justify-center {
-  justify-content: center;
-}
-
-.flex-column {
-  flex-direction: column;
-}
 
 .footer-links {
   padding: 30px 0;
