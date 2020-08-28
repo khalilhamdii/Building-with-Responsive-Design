@@ -354,3 +354,76 @@ a:-webkit-any-link {
   border-right-color: #ff4422;
 }
 
+/* Latest deals section starts here */
+
+.section-info {
+  color: #ff4422;
+}
+
+.deal-box {
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.deal-box h4 {
+  margin: 0 auto 5px auto;
+}
+
+.deal-box img {
+  width: 80px;
+  height: 80px;
+}
+
+#old-price {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+#new-price {
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+}
+/* Footer styling starts here */
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.footer-links {
+  padding: 30px 0;
+}
+
+.footer-icons {
+  margin: 0 auto 20px auto;
+  gap: 2%;
+}
+
+.f-icons {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.copyrights {
+  padding: 30px 0;
+}
+
+.copyrights span {
+  margin: 3px 0;
+  font-size: 12px;
+}
+
+.copyrights img {
+  height: 10px;
+}
+
+/* Footer styling ends here */
