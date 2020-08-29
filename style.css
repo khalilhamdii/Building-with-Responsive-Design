@@ -756,11 +756,12 @@ a:-webkit-any-link {
     align-items: flex-start;
     padding: 5px;
     margin-bottom: 15px;
+    height: auto;
   }
 
   .deal-box img {
     width: 100%;
-    height: 150px;
+    height: 60%;
   }
 
   .deal-info {
@@ -914,6 +915,16 @@ main {
 
 @media only screen and (min-width: 1023px) {
 
+  .deal-box,
+  .fund-round {
+    display: flex;
+    flex-direction: column;
+    width: 22.5%;
+    align-items: flex-start;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
   .nav-logo {
       display: none;
   }
@@ -941,6 +952,7 @@ main {
 #tnw-logo-inside {
   display: flex;
 }
+
 }
 
 /* Third breaking point */
