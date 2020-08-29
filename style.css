@@ -914,7 +914,19 @@ main {
   display: none;
 }
 
+.categories {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  justify-content: space-around;
+  gap: 10px;
+  
 }
+.category{
+  width: 100%;
+}
+
   
 /* Second breaking point */
 
@@ -965,6 +977,18 @@ main {
 
 .section-info ul {
   align-self: center;
+}
+.categories {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  justify-content: space-around;
+  gap: 10px;
+  
+}
+.category{
+  width: 100%;
 }
 
 }
