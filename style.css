@@ -839,6 +839,7 @@ a:-webkit-any-link {
   background-color: black;
   padding: 5px 20px;
   display: block;
+  white-space: nowrap;
 }
 
 .top-left a {
