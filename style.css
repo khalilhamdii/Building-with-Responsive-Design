@@ -152,10 +152,7 @@ a:-webkit-any-link {
   background-color: white;
 }
 
-#tnw-logo-inside,
-#date {
-  display: none;
-}
+
 
 .header-news {
   display: flex;
@@ -385,6 +382,12 @@ a:-webkit-any-link {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+
+#tnw-logo-inside,
+#date {
+  visibility: hidden;
 }
 
 .top-right-article {
@@ -881,10 +884,6 @@ main {
   margin: auto;
 }
 
-#tnw-logo-inside,
-#date {
-  display: none;
-}
 
 .latest-section,
 .categories,
@@ -967,9 +966,6 @@ main {
     gap: 10px;
 }
 
-#tnw-logo-inside {
-  display: flex;
-}
 
 .section-info {
   display: flex;
@@ -991,7 +987,10 @@ main {
 .category{
   width: 100%;
 }
-
+#tnw-logo-inside,
+#date {
+  visibility: visible;
+}
 }
 
 /* Third breaking point */
@@ -1033,5 +1032,8 @@ main {
     .mid-right button:hover {
       background-color: #9900cc;
     }
-  
+    #tnw-logo-inside,
+    #date {
+      visibility: visible;
+    }
   }
