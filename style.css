@@ -909,6 +909,11 @@ main {
   align-items: flex-start;
   flex-direction: column;
 }
+
+.last-fund {
+  display: none;
+}
+
 }
   
 /* Second breaking point */
@@ -951,6 +956,15 @@ main {
 
 #tnw-logo-inside {
   display: flex;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-info ul {
+  align-self: center;
 }
 
 }
