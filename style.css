@@ -1,98 +1,3 @@
-@media only screen and (min-width: 765px) {
-  main {
-    max-width: 80%;
-    margin: auto;
-  }
-  .header-news {
-    display: grid;
-    height: 500px;
-    grid-template-areas:
-      "article-left top-right-article"
-      "article-left bottom-right-article";
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 65% 35%;
-    margin: 125px 10px 20px 10px;
-    gap: 10px;
-  }
-
-  .left-article img {
-    width: 40%;
-    height: 40%;
-  }
-
-  .left-article h2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 5px 0;
-    box-sizing: border-box;
-  }
-
-  .left-article h5 {
-    margin-top: 30px;
-  }
-
-  .top-right-article h2 {
-    margin-top: 150px;
-  }
-
-  .latest-section,
-  .categories,
-  .funding-rounds {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 30px auto;
-    height: auto;
-    justify-content: space-around;
-  }
-
-  .deal-box,
-  .fund-round {
-    display: flex;
-    flex-direction: column;
-    width: 23.5%;
-    align-items: flex-start;
-    padding: 5px;
-    margin-bottom: 15px;
-  }
-
-  .deal-box img {
-    width: 100%;
-    height: 150px;
-  }
-
-  .deal-info {
-    margin-top: 5px;
-  }
-
-  .category {
-    width: 32%;
-  }
-
-  .category1,
-  .category2,
-  .category3,
-  .category4,
-  .category5,
-  .category6,
-  .category7,
-  .category8,
-  .category9 {
-    height: 370px;
-  }
-
-  .section-info,
-  .section-info ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .orange-br {
-    padding-right: 10px;
-    border-right: #ff4422 1px solid;
-  }
-}
 
 @media only screen and (min-width: 765px) and (max-width: 1023px) {
   main {
@@ -319,7 +224,22 @@ a:-webkit-any-link {
   color: #aaa;
 }
 
-.navbar {
+.nav-bar {
+  display: grid;
+  grid-template-areas: 
+  "nav-logo mid-left mid-right"
+  "bottom bottom bottom";
+  grid-template-rows: 48px 62px;
+  grid-template-columns: 106px auto 106px;
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+ /* .navbar {
   display: grid;
   height: 120px;
   grid-template-areas:
@@ -331,13 +251,76 @@ a:-webkit-any-link {
   position: fixed;
   top: 0;
   z-index: 999;
+} */
+
+.nav-logo {
+  grid-area: nav-logo;
+  padding: 16px 20px;
+  background: linear-gradient(to bottom right, #cf0393 0%, #ff4422 100%);
 }
+
+#menu-icon {
+  display: flex;
+}
+
+.nav-logo img {
+  width: 66px;
+  height: 16px;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.mid-right {
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+  grid-area: mid-right;
+}
+
+.top-left {
+  display: none;
+}
+
+.top-right {
+  display: none;
+}  
+
+.mid-left {
+  display: none;
+}
+
+.full-nav-feature {
+  display: none;
+}
+
+.mid-right a {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.mid-right i {
+  width: 16px;
+  height: 16px;
+}
+
+.bottom {
+  grid-area: bottom;
+  background-color: #FFDD33;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 
 .bs-bb {
   box-sizing: border-box;
 }
 
-.t-left {
+/* .t-left {
   grid-area: t-left;
 }
 
@@ -393,7 +376,7 @@ a:-webkit-any-link {
 
 .loop-icon {
   transform: scale(1.5);
-}
+} */
 
 /* Header styling starts here */
 
@@ -750,3 +733,293 @@ a:-webkit-any-link {
 }
 
 /* Footer styling ends here */
+
+/* First breaking point */
+
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: 80%;
+    margin: auto;
+  }
+  
+
+  
+  .header-news {
+    display: grid;
+    height: 500px;
+    grid-template-areas:
+      "article-left top-right-article"
+      "article-left bottom-right-article";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 65% 35%;
+    margin: 125px 10px 20px 10px;
+    gap: 10px;
+  }
+
+  .left-article img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .left-article h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  .left-article h5 {
+    margin-top: 30px;
+  }
+
+  .top-right-article h2 {
+    margin-top: 150px;
+  }
+
+  .latest-section,
+  .categories,
+  .funding-rounds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .deal-box,
+  .fund-round {
+    display: flex;
+    flex-direction: column;
+    width: 23.5%;
+    align-items: flex-start;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  .deal-box img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .deal-info {
+    margin-top: 5px;
+  }
+
+  .category {
+    width: 32%;
+  }
+
+  .category1,
+  .category2,
+  .category3,
+  .category4,
+  .category5,
+  .category6,
+  .category7,
+  .category8,
+  .category9 {
+    height: 370px;
+  }
+
+  .section-info,
+  .section-info ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .orange-br {
+    padding-right: 10px;
+    border-right: #ff4422 1px solid;
+  }
+ 
+  .nav-bar {
+      display: grid;
+      grid-template-areas: 
+      "nav-logo tl tr"
+      "nav-logo mid-left mid-right"
+      "bottom bottom bottom";
+      grid-template-rows: 32px 48px 30px;
+      grid-template-columns: 106px auto 236px;
+      position: fixed;
+      width: 100%;
+      height: 110px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+.top-right {
+  display: flex;
+  grid-area: tr;
+  background-color: black;
+  padding: 5px 0;
+  display: block;
+  justify-content: flex-end;
+ }
+
+ .mid-left {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mid-left a {
+  display: flex;
+  color: grey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.top-left {
+  grid-area: tl;
+  background-color: black;
+  padding: 5px 20px;
+  display: block;
+}
+
+.top-left a {
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 5px;
+    font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+}
+
+.top-left a:hover {
+    color: white;
+}
+
+.top-right a{
+  text-decoration: none;
+  font-size: 14px;
+  padding-right: 5px;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+ }
+
+ .top-right a:hover {
+  color: white;
+}
+
+.nav-logo {
+  grid-area: nav-logo;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom right, #cf0393 0%, #ff4422 100%);
+}
+.bottom {
+  grid-area: bottom;
+  background-color: #FFDD33;
+  padding: 5px 0 5px 90px;
+  display: flex;
+  justify-content: unset;
+}
+main {
+  max-width: 100%;
+  margin: auto;
+}
+
+#tnw-logo-inside,
+#date {
+  display: none;
+}
+
+.latest-section,
+.categories,
+.funding-rounds {
+  justify-content: flex-start;
+}
+
+.deal-box,
+.fund-round {
+  display: flex;
+  flex-direction: column;
+  width: 31.5%;
+  align-items: flex-start;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.category {
+  width: 49%;
+}
+
+.section-info {
+  align-items: flex-start;
+  flex-direction: column;
+}
+}
+  
+/* Second breaking point */
+
+@media only screen and (min-width: 1023px) {
+
+  .nav-logo {
+      display: none;
+  }
+
+  .nav-bar {
+      display: grid;
+      grid-template-areas: 
+      "tl tr"
+      "mid-left mid-right"
+      "bottom bottom";
+      grid-template-rows: 32px 48px 30px;
+      grid-template-columns: 50% 50%;
+      position: fixed;
+      width: 100%;
+      height: 110px;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#tnw-logo-inside {
+  display: flex;
+}
+}
+
+/* Third breaking point */
+
+@media only screen and (min-width: 1113px) {
+
+
+
+  .full-nav-feature {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 6px;
+  }
+  .mid-right img {
+      height: 52px;
+      width: 125px;
+    }
+  
+  .mid-right span {
+      color: red;
+      font-size: 26px;
+      font-weight: 500;
+      font-family: "Ropa Sans";
+  }
+  
+  .mid-right button {
+      background-color: #0cc;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font: 14px bolder;
+      height: 28px;
+      width: 100px;
+      font-family: "Maven Pro";
+      align-self: center;
+    }
+    
+    .mid-right button:hover {
+      background-color: #9900cc;
+    }
+  
+  }
