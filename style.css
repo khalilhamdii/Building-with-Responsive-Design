@@ -1,4 +1,8 @@
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 765px) {
+  main {
+    max-width: 80%;
+    margin: auto;
+  }
   .header-news {
     display: grid;
     height: 500px;
@@ -30,9 +34,104 @@
   .top-right-article h2 {
     margin-top: 150px;
   }
+
+  .latest-section,
+  .categories,
+  .funding-rounds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .deal-box,
+  .fund-round {
+    display: flex;
+    flex-direction: column;
+    width: 23.5%;
+    align-items: flex-start;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  .deal-box img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .deal-info {
+    margin-top: 5px;
+  }
+
+  .category {
+    width: 32%;
+  }
+
+  .category1,
+  .category2,
+  .category3,
+  .category4,
+  .category5,
+  .category6,
+  .category7,
+  .category8,
+  .category9 {
+    height: 370px;
+  }
+
+  .section-info,
+  .section-info ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .orange-br {
+    padding-right: 10px;
+    border-right: #ff4422 1px solid;
+  }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 765px) and (max-width: 1023px) {
+  main {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  #tnw-logo-inside,
+  #date {
+    display: none;
+  }
+
+  .latest-section,
+  .categories,
+  .funding-rounds {
+    justify-content: flex-start;
+  }
+
+  .deal-box,
+  .fund-round {
+    display: flex;
+    flex-direction: column;
+    width: 31.5%;
+    align-items: flex-start;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  .category {
+    width: 49%;
+  }
+
+  .section-info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 765px) {
   #tnw-logo-inside,
   #date {
     display: none;
@@ -52,6 +151,34 @@
 
   .top-right-article h2 {
     margin-top: 15%;
+  }
+
+  .deal-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  .deal-box img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .category1,
+  .category2,
+  .category3,
+  .category4,
+  .category5,
+  .category6,
+  .category7,
+  .category8,
+  .category9 {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -340,21 +467,14 @@ a:-webkit-any-link {
 
 /* Header styling ends here */
 
-.news {
+/* Latest news styling starts here */
+
+.latest-deals {
   flex-wrap: wrap;
   margin: 30px auto;
   gap: 10px;
   height: auto;
   align-items: flex-start;
-}
-
-.news-article {
-  width: 23%;
-  margin-bottom: 15px;
-}
-
-.news-article img {
-  height: 130px;
 }
 
 .section-name a {
@@ -366,6 +486,8 @@ a:-webkit-any-link {
 .section-name a:hover {
   color: black;
 }
+
+/* Latest news styling ends here */
 
 /* Funding rounds styling stars here */
 
@@ -380,6 +502,7 @@ a:-webkit-any-link {
 
 .section-info a:hover {
   color: black;
+  cursor: pointer;
 }
 
 .funding-rounds {
@@ -391,7 +514,6 @@ a:-webkit-any-link {
 }
 
 .fund-round {
-  width: 100%;
   height: auto;
   margin-bottom: 15px;
   position: relative;
@@ -415,7 +537,7 @@ a:-webkit-any-link {
 }
 
 .fund-info span {
-  margin: 0 100px;
+  margin-left: 100px;
 }
 
 #fund-serie {
@@ -431,11 +553,19 @@ a:-webkit-any-link {
 
 /* Categories starts here */
 
+.categories {
+  justify-content: space-between;
+}
+
 .category h2 a {
   text-decoration: none;
   color: #f42;
   font-family: sans-serif;
   font-weight: bold;
+}
+
+.category h2 a:hover {
+  color: black;
 }
 
 .category1 {
@@ -475,17 +605,16 @@ a:-webkit-any-link {
 }
 
 .category-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 100%;
   color: white;
-  margin: auto;
-  padding-top: 50%;
-  height: auto;
+  padding: 20px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 3;
-  padding-left: 10px;
-  padding-bottom: 10px;
   box-sizing: border-box;
 }
 
@@ -560,7 +689,9 @@ a:-webkit-any-link {
 
 .latest-article a {
   text-decoration: none;
-  color: black;
+  color: #333;
+  font-weight: 100;
+  font-size: 12px;
 }
 
 /* Categories ends here */
@@ -569,22 +700,11 @@ a:-webkit-any-link {
 
 .section-info {
   color: #ff4422;
-}
-
-.deal-box {
-  align-items: flex-start;
-  gap: 10px;
-  padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .deal-box h4 {
   margin: 0 auto 5px auto;
-}
-
-.deal-box img {
-  width: 80px;
-  height: 80px;
 }
 
 #old-price {
