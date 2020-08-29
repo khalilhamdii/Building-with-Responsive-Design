@@ -1,91 +1,4 @@
 
-@media only screen and (min-width: 765px) and (max-width: 1023px) {
-  main {
-    max-width: 100%;
-    margin: auto;
-  }
-
-  #tnw-logo-inside,
-  #date {
-    display: none;
-  }
-
-  .latest-section,
-  .categories,
-  .funding-rounds {
-    justify-content: flex-start;
-  }
-
-  .deal-box,
-  .fund-round {
-    display: flex;
-    flex-direction: column;
-    width: 31.5%;
-    align-items: flex-start;
-    padding: 5px;
-    margin-bottom: 15px;
-  }
-
-  .category {
-    width: 49%;
-  }
-
-  .section-info {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 765px) {
-  #tnw-logo-inside,
-  #date {
-    display: none;
-  }
-
-  .header-news {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 125px 10px 20px 10px;
-    gap: 5px;
-  }
-
-  .left-article h5 {
-    margin-top: 10%;
-  }
-
-  .top-right-article h2 {
-    margin-top: 15%;
-  }
-
-  .deal-box {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 5px;
-    margin-bottom: 5px;
-  }
-
-  .deal-box img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .category1,
-  .category2,
-  .category3,
-  .category4,
-  .category5,
-  .category6,
-  .category7,
-  .category8,
-  .category9 {
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-  }
-}
 
 html,
 body {
@@ -239,6 +152,54 @@ a:-webkit-any-link {
   background-color: white;
 }
 
+#tnw-logo-inside,
+#date {
+  display: none;
+}
+
+.header-news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 125px 10px 20px 10px;
+  gap: 5px;
+}
+
+.left-article h5 {
+  margin-top: 10%;
+}
+
+.top-right-article h2 {
+  margin-top: 15%;
+}
+
+.deal-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.deal-box img {
+  width: 80px;
+  height: 80px;
+}
+
+.category1,
+.category2,
+.category3,
+.category4,
+.category5,
+.category6,
+.category7,
+.category8,
+.category9 {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
  /* .navbar {
   display: grid;
   height: 120px;
