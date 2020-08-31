@@ -1,5 +1,3 @@
-
-
 html,
 body {
   margin: 0;
@@ -139,9 +137,9 @@ a:-webkit-any-link {
 
 .nav-bar {
   display: grid;
-  grid-template-areas: 
-  "nav-logo mid-left mid-right"
-  "bottom bottom bottom";
+  grid-template-areas:
+    "nav-logo mid-left mid-right"
+    "bottom bottom bottom";
   grid-template-rows: 48px 62px;
   grid-template-columns: 106px auto 106px;
   position: fixed;
@@ -151,8 +149,6 @@ a:-webkit-any-link {
   z-index: 999;
   background-color: white;
 }
-
-
 
 .header-news {
   display: flex;
@@ -197,19 +193,6 @@ a:-webkit-any-link {
   background-position: center;
   background-size: cover;
 }
- /* .navbar {
-  display: grid;
-  height: 120px;
-  grid-template-areas:
-    "t-left t-right"
-    "m-left m-right"
-    "b-row b-row";
-  grid-template-rows: 25% 50% 25%;
-  grid-template-columns: 60% 40%;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-} */
 
 .nav-logo {
   grid-area: nav-logo;
@@ -245,7 +228,7 @@ a:-webkit-any-link {
 
 .top-right {
   display: none;
-}  
+}
 
 .mid-left {
   display: none;
@@ -267,74 +250,15 @@ a:-webkit-any-link {
 
 .bottom {
   grid-area: bottom;
-  background-color: #FFDD33;
+  background-color: #ffdd33;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
-
 .bs-bb {
   box-sizing: border-box;
 }
-
-/* .t-left {
-  grid-area: t-left;
-}
-
-.t-right {
-  grid-area: t-right;
-  position: relative;
-}
-
-.m-left {
-  grid-area: m-left;
-}
-
-.m-right {
-  grid-area: m-right;
-  border-left: 1px solid rgb(218, 218, 218);
-}
-
-.m-right img {
-  height: 100%;
-  width: auto;
-}
-
-.m-right span {
-  color: red;
-  font-size: 26px;
-  font-weight: 500;
-  font-family: "Ropa Sans";
-}
-
-.m-right button {
-  background-color: #0cc;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  font: 14px bolder;
-  height: 60%;
-  width: 100px;
-  font-family: "Maven Pro";
-}
-
-.m-right button:hover {
-  background-color: #9900cc;
-}
-
-.b-row {
-  grid-area: b-row;
-  background-color: #ffdd33;
-}
-
-.b-row a {
-  color: black;
-}
-
-.loop-icon {
-  transform: scale(1.5);
-} */
 
 /* Header styling starts here */
 
@@ -384,10 +308,9 @@ a:-webkit-any-link {
   z-index: -1;
 }
 
-
 #tnw-logo-inside,
 #date {
-  visibility: hidden;
+  display: none;
 }
 
 .top-right-article {
@@ -700,14 +623,7 @@ a:-webkit-any-link {
 
 /* First breaking point */
 
-@media only screen and (min-width: 768px) {
-  main {
-    max-width: 80%;
-    margin: auto;
-  }
-  
-
-  
+@media only screen and (min-width: 768px) {  
   .header-news {
     display: grid;
     height: 500px;
@@ -718,6 +634,12 @@ a:-webkit-any-link {
     grid-template-columns: 65% 35%;
     margin: 125px 10px 20px 10px;
     gap: 10px;
+  }
+
+  .left-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .left-article img {
@@ -879,11 +801,11 @@ a:-webkit-any-link {
   display: flex;
   justify-content: unset;
 }
+
 main {
   max-width: 100%;
   margin: auto;
 }
-
 
 .latest-section,
 .categories,
@@ -927,10 +849,25 @@ main {
   width: 100%;
 }
 
-  
+.copyrights {
+ flex-direction: row;
+ justify-content: center;
+}
+
 /* Second breaking point */
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1024px) {
+
+  main {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .latest-section,
+.categories,
+.funding-rounds {
+  justify-content: space-between;
+}
 
   .deal-box,
   .fund-round {
@@ -943,97 +880,85 @@ main {
   }
 
   .nav-logo {
-      display: none;
+    display: none;
   }
 
   .nav-bar {
-      display: grid;
-      grid-template-areas: 
+    display: grid;
+    grid-template-areas:
       "tl tr"
       "mid-left mid-right"
       "bottom bottom";
-      grid-template-rows: 32px 48px 30px;
-      grid-template-columns: 50% 50%;
-      position: fixed;
-      width: 100%;
-      height: 110px;
-}
+    grid-template-rows: 32px 48px 30px;
+    grid-template-columns: 50% 50%;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+  }
 
-.top-right {
+  .top-right {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 10px;
-}
+    padding-right: 20px;
+  }
 
+  .section-info {
+    display: flex;
+    flex-direction: row;
+  }
 
-.section-info {
-  display: flex;
-  flex-direction: row;
-}
-
-.section-info ul {
-  align-self: center;
-}
-.categories {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
-  justify-content: space-around;
-  gap: 10px;
-  
-}
-.category{
-  width: 100%;
-}
-#tnw-logo-inside,
-#date {
-  visibility: visible;
-}
-}
-
-/* Third breaking point */
-
-@media only screen and (min-width: 1113px) {
-
-
-
+  .section-info ul {
+    align-self: center;
+  }
+  .categories {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .category {
+    width: 100%;
+  }
+  #tnw-logo-inside,
+  #date {
+    display: unset;
+  }
   .full-nav-feature {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-left: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 6px;
   }
   .mid-right img {
-      height: 52px;
-      width: 125px;
-    }
-  
+    height: 52px;
+    width: 125px;
+  }
+
   .mid-right span {
-      color: red;
-      font-size: 26px;
-      font-weight: 500;
-      font-family: "Ropa Sans";
+    color: red;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Ropa Sans";
   }
-  
+
   .mid-right button {
-      background-color: #0cc;
-      border-radius: 5px;
-      border: none;
-      color: white;
-      font: 14px bolder;
-      height: 28px;
-      width: 100px;
-      font-family: "Maven Pro";
-      align-self: center;
-    }
-    
-    .mid-right button:hover {
-      background-color: #9900cc;
-    }
-    #tnw-logo-inside,
-    #date {
-      visibility: visible;
-    }
+    background-color: #0cc;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font: 14px bolder;
+    height: 28px;
+    width: 100px;
+    font-family: "Maven Pro";
+    align-self: center;
+    margin-right: 20px;
   }
+
+  .mid-right button:hover {
+    background-color: #9900cc;
+  }
+}
