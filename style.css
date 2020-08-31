@@ -275,12 +275,13 @@ a:-webkit-any-link {
 .l-gradient {
   position: absolute;
   background: rgb(218, 141, 32);
-  background: linear-gradient(
-    173deg,
-    rgba(218, 141, 32, 0.8) 18%,
-    rgba(165, 7, 227, 0.4) 51%,
-    rgba(0, 0, 0, 0.8) 76%
-  );
+  background:
+    linear-gradient(
+      173deg,
+      rgba(218, 141, 32, 0.8) 18%,
+      rgba(165, 7, 227, 0.4) 51%,
+      rgba(0, 0, 0, 0.8) 76%
+    );
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -291,12 +292,13 @@ a:-webkit-any-link {
 .r-gradient {
   position: absolute;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -511,12 +513,13 @@ a:-webkit-any-link {
   height: 100%;
   position: absolute;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
