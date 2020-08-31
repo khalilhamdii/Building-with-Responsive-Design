@@ -2,9 +2,7 @@
 
 ![screenshot](./project-screenshot.PNG)
 
-</h1>This project is a clone of The Next Web "TNW" ( www.thenextweb.com ).It's
-
-responsive to both Mobile & Ipad view and includes two breakpoints :
+</h1>This project is a clone of The Next Web "TNW" ( www.thenextweb.com ).It's responsive to both Mobile & Ipad view and includes two breakpoints :
 
 - The first breakpoint is at 768px.
 
